@@ -1,0 +1,90 @@
+@keyframes slideIn {
+    from {
+      transform: translateX(100vw);
+      transition: 0.5s;
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 1s ease-out;
+  }
+
+  @keyframes rotation {
+      from {
+        transform: rotate(0);
+        
+      }
+      to {
+        transition: 0.5s;
+        transition-delay: 0,3s;
+        transform: rotate(-30);
+      }
+    }
+    
+    .rot-car {
+      animation: rotation 2s ease-out;
+    }
+
+  @keyframes enter0 {
+      from {
+        transform: translateX(200px);
+        transition: 0,7s;
+        transition-delay: 0,3s;
+        
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    
+    .enter0 {
+      animation: enter0 1s ;
+    }
+  @keyframes enter1 {
+      from {
+        transform: translateX(200px);
+        transition: 0,7s;
+        transition-delay: 0,5s;
+        
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    .enter1 {
+      animation: enter1 2s ;
+    }
+   
+  @keyframes enter2 {
+      from {
+        transform: translateX(200px);
+        transition: 0,7s;
+        transition-delay: 0,7s;
+        
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    
+    .enter2 {
+      animation: enter2 3s ;
+    }
+  @keyframes enter3 {
+      from {
+        transform: translateX(200px);
+        transition: 0,7s;
+        transition-delay: 0,9s;
+        
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    
+    .enter {
+      animation: enter3 3s ;
+    }
