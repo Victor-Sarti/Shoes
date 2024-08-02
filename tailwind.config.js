@@ -17,4 +17,5 @@ export default {
     '30': '30deg',
   }
   
-}
+};
+  
