@@ -1,6 +1,6 @@
 @keyframes slideIn {
     from {
-      transform: translateX(100vw);
+      transform: translateX(200vw);
       transition: 0.5s;
     }
     to {
@@ -28,63 +28,43 @@
       animation: rotation 2s ease-out;
     }
 
-  @keyframes enter0 {
-      from {
-        transform: translateX(200px);
-        transition: 0,7s;
-        transition-delay: 0,3s;
-        
-      }
-      to {
-        transform: translateX(0);
-      }
+ 
+    .active {
+      transform: translateX(0);
+      transition: transform 0.5s, opacity 0.5s;
+      opacity: 1;
     }
     
-    .enter0 {
-      animation: enter0 1s ;
+    .inactive {
+      transform: translateX(-100%);
+      transition: transform 0.5s, opacity 0.5s;
+      opacity: 0;
     }
-  @keyframes enter1 {
-      from {
-        transform: translateX(200px);
-        transition: 0,7s;
-        transition-delay: 0,5s;
-        
-      }
-      to {
-        transform: translateX(0);
-      }
-    }
-    .enter1 {
-      animation: enter1 2s ;
-    }
-   
-  @keyframes enter2 {
-      from {
-        transform: translateX(200px);
-        transition: 0,7s;
-        transition-delay: 0,7s;
-        
-      }
-      to {
-        transform: translateX(0);
-      }
-    }
-    
-    .enter2 {
-      animation: enter2 3s ;
-    }
-  @keyframes enter3 {
-      from {
-        transform: translateX(200px);
-        transition: 0,7s;
-        transition-delay: 0,9s;
-        
-      }
-      to {
-        transform: translateX(0);
-      }
-    }
-    
-    .enter {
-      animation: enter3 3s ;
-    }
+
+    /* src/styles.css */
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.slide-active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-next {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-prev {
+  transform: translateX(-100%);
+  opacity: 0;
+}
