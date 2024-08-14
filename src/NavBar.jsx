@@ -6,7 +6,7 @@ const NavBar = () => {
             <ul className=" grid grid-cols-3">
                 <li>Home</li>
                 <li>Tenis</li>
-                <li>Fale Consoco</li>
+                <li>Mande Mensagem</li>
             </ul>
         </header>
     );
